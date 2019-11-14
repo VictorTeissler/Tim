@@ -1,0 +1,5 @@
+#!/bin/bash
+source bin/activate
+kill -9 `pgrep flask`
+FLASK_APP=server.py flask run -h 0.0.0.0
+deactivate
